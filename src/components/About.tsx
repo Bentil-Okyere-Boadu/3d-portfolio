@@ -1,5 +1,4 @@
 /* eslint-disable react-refresh/only-export-components */
-import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -7,7 +6,13 @@ import { services, about } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({index, title, icon}) => {
+type ServiceCardProps = {
+  index: number,
+  title: string,
+  icon: string
+}
+
+const ServiceCard = ({index, title, icon}: ServiceCardProps) => {
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
@@ -29,7 +34,6 @@ const ServiceCard = ({index, title, icon}) => {
   )
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 const About = () => {
   return (
     <>
@@ -51,5 +55,4 @@ const About = () => {
   );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper(About, 'about');

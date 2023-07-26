@@ -42,7 +42,7 @@ const ComputerCanvas = () => {
     setIsMobile(mediaQuery.matches);
 
     // Define callback fxn to handle changes to the media query
-    const handleMQChange = (event) => {
+    const handleMQChange = (event: any) => {
       setIsMobile(event.matches)
     }
 
