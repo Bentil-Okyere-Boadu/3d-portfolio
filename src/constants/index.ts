@@ -1,3 +1,4 @@
+import { Experience, Project, Service, Tech, Testimonial, Navlink } from "../@types";
 import {
   mobile,
   backend,
@@ -25,7 +26,7 @@ import {
   threejs,
 } from "../assets";
 
-export const navLinks = [
+export const navLinks: Navlink[] = [
   {
     id: "about",
     title: "About",
@@ -40,7 +41,7 @@ export const navLinks = [
   },
 ];
 
-const services = [
+const services: Service[] = [
   {
     title: "Web Developer",
     icon: web,
@@ -59,7 +60,7 @@ const services = [
   },
 ];
 
-const technologies = [
+const technologies: Tech[] = [
   {
     name: "HTML 5",
     icon: html,
@@ -114,7 +115,7 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const experiences: Experience[] = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -169,7 +170,7 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const testimonials: Testimonial[] = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -196,7 +197,7 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const projects: Project[] = [
   {
     name: "Car Rent",
     description:
