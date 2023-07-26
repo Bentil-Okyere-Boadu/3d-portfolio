@@ -262,4 +262,6 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const about = "I'm a skilled software developer with experience in Typescript and Javascript, and expertise in frameworks like React, NodeJs and ThreeJs. I am a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Lets work together to bring your ideas to life!"
+
+export { services, technologies, experiences, testimonials, projects, about };
