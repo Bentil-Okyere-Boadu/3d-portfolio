@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
