@@ -19,16 +19,14 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import sapui from "./tech/sapui.png";
+import nextjs from "./tech/nextjs.png"
+import amalitech from "./company/amalitech.png"
+import company from "./company/default-company.png"
 
 export {
   logo,
@@ -51,12 +49,11 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
+  amalitech,
+  sapui,
+  nextjs,
+  company
 };
