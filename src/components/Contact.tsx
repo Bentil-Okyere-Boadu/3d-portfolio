@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -7,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -15,41 +16,47 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-
-  const handleChange = (e: Event) => {
-    const { name, value } = e.target;
+  const handleChange = (e: React.FormEvent<HTMLFormElement>) => {
+    const target = e.target as typeof e.target & {
+      name: string;
+      value: string;
+    };
+    const name = target.name;
+    const value = target.value;
     setForm({ ...form, [name]: value });
   };
-  
 
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICEID || '',
-      process.env.REACT_APP_EMAILJS_TEMPLATEID || '',
-      {
-        from_name: form.name,
-        to_name: process.env.REACT_APP_EMAILJS_TO_NAME,
-        from_email: form.email,
-        to_email: process.env.REACT_APP_EMAILJS_TO_EMAIL,
-        message: form.message,
-      },
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    ).then(() => {
-      setLoading(false);
-      alert('Thank you for your message, I will get back to you soon.')
-      setForm({
-        email: '',
-        name: '',
-        message: ''
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICEID || "",
+        process.env.REACT_APP_EMAILJS_TEMPLATEID || "",
+        {
+          from_name: form.name,
+          to_name: process.env.REACT_APP_EMAILJS_TO_NAME,
+          from_email: form.email,
+          to_email: process.env.REACT_APP_EMAILJS_TO_EMAIL,
+          message: form.message,
+        },
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        setLoading(false);
+        alert("Thank you for your message, I will get back to you soon.");
+        setForm({
+          email: "",
+          name: "",
+          message: "",
+        });
       })
-    }).catch((error) => {
-      setLoading(false)
-      console.log(error)
-      alert('Message not sent, something went wrong!')
-    })
+      .catch((error) => {
+        setLoading(false);
+        console.log(error);
+        alert("Message not sent, something went wrong!");
+      });
   };
 
   return (
@@ -62,9 +69,9 @@ const Contact = () => {
         <h2 className={styles.sectionHeadText}>Contact</h2>
 
         <form
-          ref={formRef.current}
-          onSubmit={(e) => handleSubmit(e)}
-          onChange={(e) => handleChange(e)}
+          ref={formRef}
+          onSubmit={handleSubmit}
+          onChange={handleChange}
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
