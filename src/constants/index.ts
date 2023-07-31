@@ -1,3 +1,4 @@
+import { Experience, Project, Service, Tech, Testimonial, Navlink } from "../@types";
 import {
   mobile,
   backend,
@@ -11,21 +12,17 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  amalitech,
+  sapui,
+  nextjs,
+  company
 } from "../assets";
 
-export const navLinks = [
+export const navLinks: Navlink[] = [
   {
     id: "about",
     title: "About",
@@ -40,26 +37,26 @@ export const navLinks = [
   },
 ];
 
-const services = [
+const services: Service[] = [
   {
     title: "Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Node Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "SAP Fiori Developer",
     icon: creator,
   },
 ];
 
-const technologies = [
+const technologies: Tech[] = [
   {
     name: "HTML 5",
     icon: html,
@@ -81,6 +78,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -93,83 +94,100 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "SAPUI5",
+    icon: sapui,
+  }
+];
+
+const experiences: Experience[] = [
+  {
+    title: "SAP Fiori Application Developer",
+    company_name: "Amalitech gGmbh",
+    icon: amalitech,
+    iconBg: "#383E56",
+    date: "March 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using SAPUI5, Fiori and other related technologies.",
+      "Fetching data from V2 and V4 OData services as well as SuccessFactors and displaying them in a user friendly manner.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Exploring SAP Business Automation Process to automate business processes and make them more efficient.",
+      "Upskilling in SAP Mobile Services for developing web and native applications in a quicker and more scalable way.",
+    ],
   },
   {
-    name: "docker",
-    icon: docker,
+    title: "NextJS Developer",
+    company_name: "Tewaa Technologies",
+    icon: company,
+    iconBg: "#E6DEDD",
+    date: "May 2023 - June 2023",
+    points: [
+      "Developed a school management web application using Next.js and other related technologies.",
+      "Built custom components for pages of user dashboard.",
+      "Implemented responsive design and ensured cross-browser compatibility.",
+      "Made API requests using react-query for data caching and faster response to improve user experience."
+     ],
+  },
+  {
+    title: "Development Team Lead",
+    company_name: "Amalitech gGmbh",
+    icon: amalitech,
+    iconBg: "#383E56",
+    date: "Sep 2022 - Mar 2023",
+    points: [
+      "Liaised with the product owner and relevant stakeholders to bring out scalable and user-friendly freelance and recruitment platform (TheFairwork) and blog.",
+      "Led the team to reduce code smells by 35% and bugs by 80% on TheFairWork platform through effective code review and bug fixes.",
+      "Led the development team to upscale in Nextjs for TheFairWork blog implementation.",
+      "Successfully built and delivered the TheFairWork blog.",
+      "Conducted code reviews and provided constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Outreach Team Member",
+    company_name: "Amalitech gGmbh",
+    icon: amalitech,
+    iconBg: "#E6DEDD",
+    date: "Aug 2022 - Feb 2023",
+    points: [
+      "Assist in the development and implementation of the marketing plan to operationalize the commencement of The Fairwork- a freelance platform that connects African Talents to businesses across the world who can benefit from their talent, hard work, and grit.",
+      "Mining and compilation of emails and LinkedIn accounts of leads (potential clients) using LinkedIn.",
+      "Design email copies and conduct outreach for TheFairwork.",
+      "Perform A/B test and multivariate test to help validate email copies that enhance increased sign-up rate on The Fairwork platform.",
+      "Prepare outreach presentations and review all contracts between clients and freelancers.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Amalitech gGmbh",
+    icon: amalitech,
+    iconBg: "#383E56",
+    date: "Jun 2022 - Sep 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full Stack Developer Trainee",
+    company_name: "Amalitech Training gGmbh",
+    icon: amalitech,
+    iconBg: "#E6DEDD",
+    date: "Oct 2021 - May 2022",
+    points: [
+      "Training in JavaScript, ReactJs, NodeJs, PostgreSQL, Git, and GitHub.",
+      "Training in modern programming practices.",
+      "Collaborating with teams in sprint projects.",
+      "Taking assessments and quizzes on CodeSignal platform and passing successfully."
+    ],
   },
 ];
 
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
-const testimonials = [
+const testimonials: Testimonial[] = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -196,7 +214,7 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const projects: Project[] = [
   {
     name: "Car Rent",
     description:
@@ -262,6 +280,6 @@ const projects = [
   },
 ];
 
-const about = "I'm a skilled software developer with experience in Typescript and Javascript, and expertise in frameworks like React, NodeJs and ThreeJs. I am a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Lets work together to bring your ideas to life!"
+const about = "I'm a skilled software developer with experience in Typescript and Javascript, and expertise in frameworks like React, NextJs, NodeJs and SAPUI5. I am a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Lets work together to bring your ideas to life!"
 
 export { services, technologies, experiences, testimonials, projects, about };

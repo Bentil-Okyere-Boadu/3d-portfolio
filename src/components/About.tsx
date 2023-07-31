@@ -5,14 +5,9 @@ import { styles } from "../styles";
 import { services, about } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { Service } from "../@types";
 
-type ServiceCardProps = {
-  index: number,
-  title: string,
-  icon: string
-}
-
-const ServiceCard = ({index, title, icon}: ServiceCardProps) => {
+const ServiceCard = ({title, icon}: Service, index: number) => {
   return (
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
