@@ -3,10 +3,14 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Preload } from '@react-three/drei';
 import * as random from 'maath/random/dist/maath-random.cjs'
 
-const Stars = (props: any) => {
-  const ref = useRef();
+type Rotation = {
+  rotation:{ x: number , y: number}
+}
 
-  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+const Stars = (props: any) => {
+  const ref = useRef<Rotation>(null!);
+
+  const sphere = random.inSphere(new Float32Array(5000), { radius: 2 });
   useFrame((state,delta) => {
     ref.current.rotation.x = delta / 10;
     ref.current.rotation.y = delta / 15;

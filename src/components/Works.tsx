@@ -72,7 +72,7 @@ const Works = () => {
           {
             projects.map((project, index) => {
               return (
-                <ProjectCard index={index} project={project}/>
+                <ProjectCard key={index} index={index} project={project}/>
               )
             })
           }
