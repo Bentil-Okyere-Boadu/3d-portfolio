@@ -11,7 +11,7 @@ const Stars = (props: any) => {
   const ref = useRef<Rotation>(null!);
 
   const sphere = random.inSphere(new Float32Array(5000), { radius: 2 });
-  useFrame((state,delta) => {
+  useFrame((_state,delta) => {
     ref.current.rotation.x = delta / 10;
     ref.current.rotation.y = delta / 15;
   })
