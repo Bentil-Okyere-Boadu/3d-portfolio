@@ -32,16 +32,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.REACT_APP_EMAILJS_SERVICEID || "",
-        process.env.REACT_APP_EMAILJS_TEMPLATEID || "",
+        import.meta.env.VITE_APP_EMAILJS_SERVICEID || "",
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATEID || "",
         {
           from_name: form.name,
-          to_name: process.env.REACT_APP_EMAILJS_TO_NAME,
+          to_name: import.meta.env.VITE_APP_EMAILJS_TO_NAME,
           from_email: form.email,
-          to_email: process.env.REACT_APP_EMAILJS_TO_EMAIL,
+          to_email: import.meta.env.VITE_APP_EMAILJS_TO_EMAIL,
           message: form.message,
         },
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         setLoading(false);
