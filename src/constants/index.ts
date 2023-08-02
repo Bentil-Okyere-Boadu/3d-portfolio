@@ -9,13 +9,15 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   git,
-  carrent,
-  jobit,
-  tripguide,
+  imusic,
+  fairwork,
+  fairworkBlog,
+  imageProcessing,
+  storeBE,
+  storefront,
   amalitech,
   sapui,
   nextjs,
@@ -80,10 +82,6 @@ const technologies: Tech[] = [
   {
     name: "Next JS",
     icon: nextjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -216,7 +214,51 @@ const testimonials: Testimonial[] = [
 
 const projects: Project[] = [
   {
-    name: "Car Rent",
+    name: "theFairwork",
+    description:
+      "An exceptional freelance project unlike the others that helps connects people together in the first place and in turn gets work done in a professional and smooth manner.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "material UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react-query",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fairwork,
+    source_code_link: "",
+    demo: 'https://www.thefairwork.com/',
+  },
+  {
+    name: "theFairwork Blog",
+    description:
+      "Blog for theFairwork platform where freelancers can create and manage blogs which will be reviewed and approved for upload by thefairwork administrators.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react-query",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fairworkBlog,
+    source_code_link: "",
+    demo: 'https://blog.thefairwork.com/',
+  },
+  {
+    name: "iMusic",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -229,45 +271,25 @@ const projects: Project[] = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "chakra UI",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: imusic,
+    source_code_link: "https://github.com/Bentil-OkyereBoadu/imusic",
+    demo: 'https://imusic-three.vercel.app/',
   },
   {
-    name: "Job IT",
+    name: "Store Front",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This project is a simple e-commerce website. Users are able to add products to cart, view details of products, edit cart and place orders for products selected.",
     tags: [
       {
-        name: "react",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
@@ -275,8 +297,54 @@ const projects: Project[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: storefront,
+    source_code_link: "https://github.com/Bentil-Okyere-Boadu/store-frontend",
+  },
+  {
+    name: "Storefront API",
+    description:
+      "This repo contains a Node and Express app for constructing a storefront API.",
+    tags: [
+      {
+        name: "postgres",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: storeBE,
+    source_code_link: "https://github.com/Bentil-Okyere-Boadu/nd0067-c2-creating-an-api-with-postgresql-and-express-project-starter",
+  },
+  {
+    name: "Image Processing API",
+    description:
+      "Image Processing API with NodeJS, Express and TypeScript",
+    tags: [
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: imageProcessing,
+    source_code_link: "https://github.com/Bentil-Okyere-Boadu/ImageProcessingAPI",
   },
 ];
 
