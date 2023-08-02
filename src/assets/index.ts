@@ -20,9 +20,13 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import imageProcessing from "./imageProcessing.png";
+import storefront from "./storefront.png";
+import storeBE from "./storefront backend.png"
+import imusic from "./imusic.jpg";
+import fairwork from "./fairwork.png"
+import fairworkBlog from "./fairworkBlog.png"
+import demo from "./demo.png"
 import sapui from "./tech/sapui.png";
 import nextjs from "./tech/nextjs.png"
 import amalitech from "./company/amalitech.png"
@@ -49,11 +53,15 @@ export {
   redux,
   tailwind,
   typescript,
-  carrent,
-  jobit,
-  tripguide,
+  imageProcessing,
+  imusic,
   amalitech,
   sapui,
   nextjs,
-  company
+  company,
+  storeBE,
+  storefront,
+  fairwork,
+  fairworkBlog,
+  demo
 };

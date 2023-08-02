@@ -26,6 +26,7 @@ interface Project {
     tags: ProjectTag[],
     image: string,
     source_code_link: string
+    demo? : string
 }
 
 interface Tech {
