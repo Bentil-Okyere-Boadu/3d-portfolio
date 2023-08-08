@@ -282,7 +282,7 @@ const projects: Project[] = [
   {
     name: "Store Front",
     description:
-      "This project is a simple e-commerce website. Users are able to add products to cart, view details of products, edit cart and place orders for products selected.",
+      "This project is a simple e-commerce website. Users are able to add products to the cart, view details of products, edit the cart, and place orders for products selected.",
     tags: [
       {
         name: "angular",
