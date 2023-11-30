@@ -25,7 +25,7 @@ import storefront from "./storefront.png";
 import storeBE from "./storefront backend.png"
 import imusic from "./imusic.jpg";
 import fairwork from "./fairwork.png"
-import fairworkBlog from "./fairworkBlog.png"
+import rhowsglow from "./rhowsglow.png"
 import demo from "./demo.png"
 import sapui from "./tech/sapui.png";
 import nextjs from "./tech/nextjs.png"
@@ -62,6 +62,6 @@ export {
   storeBE,
   storefront,
   fairwork,
-  fairworkBlog,
+  rhowsglow,
   demo
 };
