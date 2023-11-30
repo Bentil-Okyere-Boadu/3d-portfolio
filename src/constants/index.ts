@@ -253,7 +253,7 @@ const projects: Project[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: fairworkBlog,
+    image: rhowsglow,
     source_code_link: "",
     demo: 'https://live-rhowsglow.pantheonsite.io/shop/',
   },
