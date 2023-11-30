@@ -14,7 +14,7 @@ import {
   git,
   imusic,
   fairwork,
-  fairworkBlog,
+  rhowsglow,
   imageProcessing,
   storeBE,
   storefront,
@@ -236,26 +236,26 @@ const projects: Project[] = [
     demo: 'https://www.thefairwork.com/',
   },
   {
-    name: "theFairwork Blog",
+    name: "Rhows Glow",
     description:
-      "Blog for theFairwork platform where freelancers can create and manage blogs which will be reviewed and approved for upload by thefairwork administrators.",
+      "A WordPress e-commerce website for a cosmetics company.",
     tags: [
       {
-        name: "nextjs",
+        name: "WordPress",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind css",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
-        name: "react-query",
+        name: "Elementor",
         color: "pink-text-gradient",
       },
     ],
     image: fairworkBlog,
     source_code_link: "",
-    demo: 'https://blog.thefairwork.com/',
+    demo: 'https://live-rhowsglow.pantheonsite.io/shop/',
   },
   {
     name: "iMusic",
